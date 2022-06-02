@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities{
+.wrapper-global {
+  @apply max-w-[1170px] py-0 px-[15px] my-0 mx-auto
+}
+/*  Đang làm  */
+.p-global {
+  @apply text-[16px] font-normal leading-[27.2px] 
+}
+.wrapper {
+  @apply relative inset-x-0 transition-colors duration-300 ease-in-out;
+}
+.header {
+  @apply bg-transparent fixed w-full inset-x-0 top-0 z-[9999] transition-all duration-300;
+}
+.title-header{
+  @apply py-0 px-[15px] uppercase text-[12px] font-semibold leading-[65px] duration-200 inline-block hover:text-[#3498db] text-[#fff];
+}
+.titleHeader-navUl {
+  @apply absolute text-[#fff]  bg-[#242424] w-[200px] hidden;
+} 
+
+.titleHeader-navLi {
+  @apply uppercase relative text-[12px] p-[10px] flex-between font-semibold hover:text-[#3498db] duration-200;
+} 
+.flex-ja-center{
+  @apply flex items-center justify-center;
+}
+.flex-between {
+  @apply flex items-center justify-between;
+}
+.flex-item-center {
+  @apply flex items-center;
+}
+.iconHeader {
+  @apply relative text-sm font-light px-[15px] cursor-pointer hover:text-[#3498db] duration-200 text-[#fff];
+}
+.shopping-dropdown {
+  @apply absolute p-[15px] bg-[#242424] border-[1px] border-bg24 w-[280px] z-[1000] top-[200%] right-[20%] shadow-drop;
+}
+.shopping-dropdown-item {
+  @apply relative flex-between pt-[3px] pb-[10px] my-[3px];
+}
+.shopping-left {
+  @apply flex w-3/4;
+}
+.shopping-info-link {
+  @apply inline-block font-semibold text-[12px] uppercase duration-200 text-[#fff] hover:text-[#3498db];
+}
+.shopping-btn {
+  @apply  text-[9px] w-5 h-5 leading-[10px] rounded-[50%] border-none px-[5px] border-[#d43f3a] bg-[#d9534f] text-[#fff] pointer-events-none duration-200;
+}
+.shopping-divider  {
+  @apply h-[1px] my-[9px] bg-[#777];
+}
+ /* .beforeIconheader {
+  @apply after:top-[-10px] after:right-[8px] after:bg-[#3498db] after:text-[12px] after:font-medium after:leading-4 after:w-4 after:h-4 after:rounded-[50%] after:inline-block after:pt[1px] after:pl-[2px] after:text-[#fff] after:text-center;
+}  */
+/* banner */
+  .banner {
+    @apply relative bg-[url(http://zozothemes.com/html/epoint/demo/images/content/slider/9.jpg)] bg-no-repeat bg-cover bg-fixed	h-[573px] bg-center overflow-x-hidden;
+  }
+  .banner-wrapper {
+    @apply wrapper-global absolute w-[100%] overflow-hidden text-center top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] h-full
+  }
+  .banner-container {
+    @apply absolute flex transition-all duration-500 ease-linear flex-nowrap pt-[86px] left-0 pointer-events-none w-full;
+  }
+  .banner-item {
+    @apply w-full text-[#fff];
+  }
+  .banner-title {
+    @apply w-full text-8xl leading-none uppercase font-black mt-[120px] mb-[15px];
+  }
+  .banner-desc {
+    @apply text-[18px] mb-[30px] px-[15px];
+  }
+  .banner-btn {
+    @apply inline-block text-[16px] font-semibold leading-snug rounded-[25px] py-3 px-9  bg-[#3498db] cursor-pointer transition-all duration-300 mt-2 uppercase;
+  } 
+  .banner-dot {
+    @apply flex items-center absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5;
+  }
+  .banner-dot-item {
+    @apply rounded-[50%] border-2 border-[transparent] m-1 w-6 h-6 hover:border-2 hover:border-[#fff] cursor-pointer;
+  }
+  .banner-dot-itemSub {
+    @apply inline-block bg-bgWhile w-[10px] h-[10px] m-[5px] rounded-[50%];
+  }
+  .active {
+    @apply border-2 border-[#fff]
+  }
+}
