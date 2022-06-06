@@ -14,8 +14,12 @@ html,
 body {
   height: 100%;
   line-height: 1.5;
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #222;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
 img,
 picture,
@@ -49,4 +53,46 @@ a {
 ul,
 li {
   list-style: none;
+}
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+  margin: 0 0 15px;
+  font-weight: 400;
+  color: #222;
+  font-family: Poppins, sans-serif;
+}
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #323232;
+  padding: 9px 0;
+  margin: 0 -20px;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+h5 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+h6 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 25px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7em;
+  color: #434955;
+  font-family: "Source Sans Pro", sans-serif;
 }
