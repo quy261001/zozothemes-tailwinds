@@ -119,10 +119,10 @@
   @apply left-0;
 }
 .is-showLeftTB {
-  @apply left-[450px];
+  @apply md:left-[450px] lg:left-[0px];
 }
 .is-showOptionTB {
-  @apply !left-[200px];
+  @apply md:!left-[200px] lg:!left-[0];
 }
 /* MenuMobile */
 .menu-mb{
